@@ -1,0 +1,83 @@
+{
+  "generated_at": "2026-06-16T06:51:45.033607",
+  "dataset_rows": 2000,
+  "feature_count": 24,
+  "best_model": "LightGBM",
+  "best_r2": 0.974,
+  "feature_names": [
+    "GrLivArea",
+    "BedroomAbvGr",
+    "FullBath",
+    "HalfBath",
+    "BsmtFullBath",
+    "GarageArea",
+    "GarageCars",
+    "YearBuilt",
+    "YearRemodAdd",
+    "OverallQual",
+    "OverallCond",
+    "LotArea",
+    "TotalBsmtSF",
+    "TotalBath",
+    "HouseAge",
+    "YearsSinceRemodel",
+    "TotalSF",
+    "QualArea",
+    "PricePerRoom",
+    "IsNew",
+    "IsRemodeled",
+    "Neighborhood_enc",
+    "BldgType_enc",
+    "SaleCondition_enc"
+  ],
+  "results": [
+    {
+      "model": "Linear Regression",
+      "RMSE": 58420.04,
+      "MAE": 44986.07,
+      "R2": 0.829,
+      "RMSLE": 0.118,
+      "CV_RMSE": 61210.73
+    },
+    {
+      "model": "Ridge Regression",
+      "RMSE": 59042.97,
+      "MAE": 45564.72,
+      "R2": 0.8253,
+      "RMSLE": 0.1207,
+      "CV_RMSE": 61533.01
+    },
+    {
+      "model": "Lasso Regression",
+      "RMSE": 58428.64,
+      "MAE": 45020.41,
+      "R2": 0.829,
+      "RMSLE": 0.1182,
+      "CV_RMSE": 61096.7
+    },
+    {
+      "model": "ElasticNet",
+      "RMSE": 138465.81,
+      "MAE": 114943.18,
+      "R2": 0.0394,
+      "RMSLE": 0.3035,
+      "CV_RMSE": 138163.76
+    },
+    {
+      "model": "XGBoost",
+      "RMSE": 23242.85,
+      "MAE": 18391.18,
+      "R2": 0.9729,
+      "RMSLE": 0.0546,
+      "CV_RMSE": 27234.11
+    },
+    {
+      "model": "LightGBM",
+      "RMSE": 22789.37,
+      "MAE": 17744.23,
+      "R2": 0.974,
+      "RMSLE": 0.0532,
+      "CV_RMSE": 26485.03
+    }
+  ]
+}
